@@ -1,4 +1,4 @@
-import { ICommandExec } from "../../core/executor/command.types";
+import { ICommandExec } from "../../core/executor/command.types.js";
 
 export interface IFfmpegInput {
     width: number;

@@ -1,4 +1,4 @@
-import { IStreamLogger } from "../../core/handlers/stream-logger.interface";
+import { IStreamLogger } from "../../core/handlers/stream-logger.interface.js";
 
 export class ConsoleLogger implements IStreamLogger{
     private static logger: ConsoleLogger;

@@ -1,13 +1,13 @@
 import { ChildProcessWithoutNullStreams, spawn } from "child_process";
 import path from "path";
-import { CommandExecutor } from "../../core/executor/command.executor";
-import { ICommandExec } from "../../core/executor/command.types";
-import { FileService } from "../../core/files/file.service";
-import { IStreamLogger } from "../../core/handlers/stream-logger.interface";
-import { StreamHandler } from "../../core/handlers/stream.handler";
-import { PromptService } from "../../core/prompt/prompt.service";
-import { FfmpegBuilder } from "./ffmpeg.builder";
-import { ICommandExecFfmpeg, IFfmpegInput } from "./ffmpeg.types";
+import { CommandExecutor } from "../../core/executor/command.executor.js";
+import { ICommandExec } from "../../core/executor/command.types.js";
+import { FileService } from "../../core/files/file.service.js";
+import { IStreamLogger } from "../../core/handlers/stream-logger.interface.js";
+import { StreamHandler } from "../../core/handlers/stream.handler.js";
+import { PromptService } from "../../core/prompt/prompt.service.js";
+import { FfmpegBuilder } from "./ffmpeg.builder.js";
+import { ICommandExecFfmpeg, IFfmpegInput } from "./ffmpeg.types.js";
 
 export class FfmpegExecutor extends CommandExecutor<IFfmpegInput> {
     private fileService: FileService = new FileService();
